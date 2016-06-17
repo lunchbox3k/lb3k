@@ -7,8 +7,7 @@ import string
 
 def get_lunch_options():
     print("getting lunch options")
-    un = 'JPiercy3'
-    pw = 'seamslesscomplicated'
+    un, pw = open('/seamless_creds.txt', 'r').read().splitlines()[:2]
     payload = {'username': un, 'password': pw}
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
     s = requests.session()
