@@ -2,8 +2,6 @@ import RPi.GPIO as GPIO
 from time import sleep
 import uinput
 
-
-
 def sendLeft():
     device.emit_click(uinput.KEY_LEFT)
     print('Sent left')
