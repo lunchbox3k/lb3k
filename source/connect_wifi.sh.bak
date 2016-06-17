@@ -1,0 +1,19 @@
+
+midori https://www.factset.com &
+
+sleep 5
+
+curl --data "buttonClicked=4&err_flag=0&err_msg=&info_flag=0&info_msg=&redirect_url=&network_name=Guest+Network&username=LunchBox3000&password=Seams<Compl1cated" "https://securewifi.factset.com"
+
+sleep 5
+
+pkill midori
+
+sleep 5
+
+date > /restaurants/todays_address.txt
+ifconfig >> /restaurants/todays_address.txt
+
+sleep 5
+
+python /source/email_todays_address.py

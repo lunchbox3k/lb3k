@@ -1,0 +1,7 @@
+curl http://www.factset.com  # Try to trigger captive portal
+curl --data "buttonClicked=4&err_flag=0&err_msg=&info_flag=0&info_msg=&redirect_url=&network_name=Guest+Network&username=LunchBox3000&password=Seams<Compl1cated" "https://securewifi.factset.com"
+
+date > /restaurants/todays_address.txt
+ifconfig >> /restaurants/todays_address.txt
+
+python /source/email_todays_address.py
