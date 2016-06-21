@@ -16,6 +16,10 @@ def main():
         if call("/source/connect_wifi.sh", shell=True):
             time.sleep(5)
             continue
+        print("FETCHING LATEST CODE FROM GITHUB")
+        if call("/update_code.sh", shell=True):
+            time.sleep(5)
+            continue
         print("SCRAPING SEAMLESS")
         call("/source/scrape_seamless.sh", shell=True)
         new_names = read_names()
