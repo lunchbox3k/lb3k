@@ -72,11 +72,13 @@
             var sent = ZZZ;
             function myFunction(index) {
 		var res = $(document).find('#'+index).children('.seamless-text').text();
-                console.log(index);
+                console.log("Button pushed for index: " + index + ", restaurant: " + res);
                 var x;
                 if(sent[index] == 1){
+                    console.log("This restaurant was already sent, index: " + index);
                     confirm("A notification for " + restaurants[index] + " has been previously sent.");
                }else if (confirm("Confirm sending email for " + restaurants[index] + "?") == true) {
+                    console.log("Sending post request for index: " + index);
                     sent[index] = 1;
                     $.post('http://localhost:11011/arrived/' + index);
 		    $('.seamless-slider').find('.seamless-slide:contains("'+res+'")').css("background-color","grey");
