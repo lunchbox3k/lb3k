@@ -2,6 +2,7 @@ from flask import Flask
 import requests
 import time
 import json
+import datetime
 
 
 app = Flask(__name__)
@@ -10,12 +11,19 @@ SERVER_PORT = 11011
 restaurants = []
 email_has_been_sent = []
 
+BACKEND_LOG = '/logs/backend_log.txt'
+
 
 @app.route('/arrived/<int:index>', methods=['POST'])
 def food_has_arrived(index):
+    restaurant = restaurants[index]
+    write_log('Recieved request for index {}, restaurant {}'.format(index, restaurant))
     if not email_has_been_sent[index]:
+        write_log('Email has not been sent for restaurant {}'.format(restaurant))
         email_has_been_sent[index] = 1
-        email_notification_for(restaurants[index])  
+        email_notification_for(restaurant)
+    else:
+        write_log('Email has already been sent for restaurant {}'.format(restaurant))
 
 
 def init():
@@ -24,21 +32,40 @@ def init():
     with open("/restaurants/todays_names.txt", 'r') as F:
         restaurants = F.read().splitlines()
     email_has_been_sent = [0]*len(restaurants)
+    with open(BACKEND_LOG, 'w') as f:
+        f.write('')
+    write_log('Today\'s restaurant list is {}'.format(restaurants))
+
+
+def write_log(log):
+    with open(BACKEND_LOG, 'a') as f:
+        f.write(str(datetime.datetime.now()) + ': ' + log + '\n')
 
 
 def email_notification_for(restaurant_arrived_name):
     #try:
     subject_val = restaurant_arrived_name + ' is here!!'
     print (subject_val)
-    body = pretty_info(write_rest_stats(restaurant_arrived_name))
-    print (body)
+    # body = pretty_info(write_rest_stats(restaurant_arrived_name))
+    # print (body)
     status = 0
     attempt = 1
     while status != 200 and attempt <= 5:
-        result = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": "mwarner@factset.com", "subject": subject_val, "text": " "})
+        write_log('Sending request to mailgun for restaurant {}'.format(restaurant_arrived_name))
+        try:
+            result = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": "mwarner@factset.com", "subject": subject_val, "text": " "})
+        except Exception as e:
+            write_log('Request failed with message {}'.format(e))
+            attempt += 1
+            continue
         # print(result)
         status = result.status_code
+        write_log('Request returned {} status code for restaurant {}'.format(status, restaurant_arrived_name))
         attempt += 1
+    if status != 200:
+        write_log('Out of retry attempts for restaurant {}'.format(restaurant_arrived_name))
+    else:
+        write_log('Request successfully sent for restaurant {}'.format(restaurant_arrived_name))
     #if result.status_code != 200:
         #raise Exception
     #except mandrill.Error as e:
