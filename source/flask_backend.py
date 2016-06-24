@@ -57,6 +57,7 @@ def email_notification_for(restaurant_arrived_name):
         except Exception as e:
             write_log('Request failed with message {}'.format(e))
             attempt += 1
+            time.sleep(2 ** attempt)
             continue
         # print(result)
         status = result.status_code
