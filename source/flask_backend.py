@@ -3,6 +3,7 @@ import requests
 import time
 import json
 import datetime
+from subprocess import call
 
 
 app = Flask(__name__)
@@ -57,6 +58,7 @@ def email_notification_for(restaurant_arrived_name):
         except Exception as e:
             write_log('Request failed with message {}'.format(e))
             attempt += 1
+            call("/source/connect_wifi.sh", shell=True)
             time.sleep(2 ** attempt)
             continue
         # print(result)
