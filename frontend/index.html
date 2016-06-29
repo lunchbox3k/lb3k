@@ -40,16 +40,16 @@
                 <div class="seamless-slider" id="main-slider">
                         
                         <div class="seamless-slide" id="0">
-                            <span class="seamless-text">Al's Italian Beef and Catering</span>
+                            <span class="seamless-text">Carbon Live Fire Mexican Grill</span>
                         </div>
                         <div class="seamless-slide" id="1">
-                            <span class="seamless-text">Amarit Thai & Sushi</span>
+                            <span class="seamless-text">Freshii (Wacker Dr)</span>
                         </div>
                         <div class="seamless-slide" id="2">
-                            <span class="seamless-text">Protein Bar (W Washington St)</span>
+                            <span class="seamless-text">Hot Woks Cool Sushi - Adams</span>
                         </div>
                         <div class="seamless-slide" id="3">
-                            <span class="seamless-text">Zoup! (W Adams St)</span>
+                            <span class="seamless-text">Cosi Chicago</span>
                         </div>
                 </div>
             </div>
@@ -80,15 +80,17 @@
         </script>
 
         <script type="text/javascript">
-            var restaurants = ["Al's Italian Beef and Catering", "Amarit Thai & Sushi", "Protein Bar (W Washington St)", "Zoup! (W Adams St)"];
+            var restaurants = ["Carbon Live Fire Mexican Grill", "Freshii (Wacker Dr)", "Hot Woks Cool Sushi - Adams", "Cosi Chicago"];
             var sent = [0, 0, 0, 0];
             function myFunction(index) {
 		var res = $(document).find('#'+index).children('.seamless-text').text();
-                console.log(index);
+                console.log("Button pushed for index: " + index + ", restaurant: " + res);
                 var x;
                 if(sent[index] == 1){
+                    console.log("This restaurant was already sent, index: " + index);
                     confirm("A notification for " + restaurants[index] + " has been previously sent.");
                }else if (confirm("Confirm sending email for " + restaurants[index] + "?") == true) {
+                    console.log("Sending post request for index: " + index);
                     sent[index] = 1;
                     $.post('http://localhost:11011/arrived/' + index);
 		    $('.seamless-slider').find('.seamless-slide:contains("'+res+'")').css("background-color","grey");
