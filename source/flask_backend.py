@@ -58,7 +58,8 @@ def email_notification_for(restaurant_arrived_name):
         except Exception as e:
             write_log('Request failed with message {}'.format(e))
             attempt += 1
-            call("/source/connect_wifi.sh", shell=True)
+            connect_result = call("/source/connect_wifi.sh", shell=True)
+            write_log('Connect wifi result: {}'.format(connect_result))
             if attempt <= 6:
                 time.sleep(2 ** attempt)
             continue
