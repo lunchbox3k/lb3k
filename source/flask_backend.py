@@ -47,6 +47,7 @@ def email_notification_for(restaurant_arrived_name):
     #try:
     subject_val = restaurant_arrived_name + ' is here!!'
     print (subject_val)
+    write_rest_stats(restaurant_arrived_name)
     # body = pretty_info(write_rest_stats(restaurant_arrived_name))
     # print (body)
     status = 0
