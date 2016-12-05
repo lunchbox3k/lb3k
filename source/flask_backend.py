@@ -56,7 +56,6 @@ def email_notification_for(restaurant_arrived_name):
         write_log('Sending request to mailgun for restaurant {}'.format(restaurant_arrived_name))
         try:
             result = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": "mwarner@factset.com", "subject": subject_val, "text": " "})
-            result2 = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": ["9898591371@txt.att.net","mr.mcnoot@gmail.com","hspitzle@gmail.com"], "subject": subject_val, "text": "STFU.GG.GTFO"})
         except Exception as e:
             write_log('Request failed with message {}'.format(e))
             attempt += 1
