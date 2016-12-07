@@ -34,7 +34,7 @@ def get_msg_body():
 
 
 def email_the_address():
-    result = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": "mwarner@factset.com, adsmith@factset.com, jpiercy@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()})
+    result = requests.post("https://api.mailgun.net/v3/sandbox92d50346bad74139acc91c33ac2c50b3.mailgun.org/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@hotlunch.com", "to": "adsmith@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()})
     if result.status_code != 200:
         sys.exit(1)
 
