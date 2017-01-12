@@ -9,6 +9,7 @@ def pretty_info(info):
 
 def get_msg_body():
     body_val = "WARNING: this email does not exist. These are not the stats you're looking for.\n\n"
+    body_val += "http://www.seamless.com/corporate/login\n\n"
     body_val += "Today's Scraped Lunch Options:\n"
     restaurants = ""
     stats_data = {}
