@@ -1,108 +1,143 @@
-[1:1:1520678496782:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libffmpegsumo.so) failed, dlerror() says:
+[1:1:1531478231621:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libffmpegsumo.so) failed, dlerror() says:
 /usr/lib/chromium/libffmpegsumo.so: undefined symbol: ff_float_to_int16_vfp
-[1:1:1520678499680:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libavutil.so.51) failed, dlerror() says:
+[1:1:1531478234435:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libavutil.so.51) failed, dlerror() says:
 /usr/lib/chromium/libavutil.so.51: cannot open shared object file: No such file or directory
-[1:1:1520678555380:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
-[1:1:1520678555727:VERBOSE1:zygote_main_linux.cc(470)] ZygoteMain: fork delegate is NULL
-[1:1:1520678671040:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
-[27701:27701:1520680931946:VERBOSE1:client_socket_pool_base.cc(65)] Setting g_socket_reuse_policy_penalty_exponent = 0.25
-[27701:27701:1520681042020:VERBOSE1:pref_proxy_config_tracker_impl.cc(143)] 0xb743d7f0: set chrome proxy config service to 0xb733cf30
-[27701:27701:1520681042512:VERBOSE1:pref_proxy_config_tracker_impl.cc(226)] 0xb743d7f0: Done pushing proxy to UpdateProxyConfig
-[27701:27701:1520681044236:VERBOSE1:gpu_info_collector_linux.cc(259)] PCI bus scanning is not supported
-[27701:27757:1520681045598:VERBOSE1:host_resolver_impl.cc(1898)] IPv6Probe forced AddressFamily setting to ADDRESS_FAMILY_IPV4
-[27701:27701:1520681054998:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/chromium/plugins
-[27701:27701:1520681056241:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /home/max/.mozilla/plugins
-[27701:27701:1520681057384:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/browser-plugins
-[27701:27701:1520681058384:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/mozilla/plugins
-[27701:27701:1520681059264:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/firefox/plugins
-[27701:27701:1520681060331:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/xulrunner-addons/plugins
-[27701:27701:1520681889089:VERBOSE1:protected_prefs_watcher.cc(252)] Backup version: 4
-[27701:27701:1520681889569:VERBOSE1:protected_prefs_watcher.cc(116)] Initialized pref watcher
-[27701:27701:1520682216741:VERBOSE1:pref_proxy_config_tracker_impl.cc(143)] 0xb740c108: set chrome proxy config service to 0xb740d198
-[27701:27701:1520682219666:VERBOSE1:pref_proxy_config_tracker_impl.cc(226)] 0xb740c108: Done pushing proxy to UpdateProxyConfig
-[27701:27701:1520682599388:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
-[27701:27701:1520682611095:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
-[27701:27701:1520682611941:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
-[27701:27701:1520682799328:VERBOSE1:startup_browser_creator_impl.cc(587)] StartupBrowserCreatorImpl::ProcessStartupURLs
-[27701:27701:1520682799878:VERBOSE1:startup_browser_creator_impl.cc(595)] Pref: default
-[27701:27701:1520682849649:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
-[27701:27701:1520682856329:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
-[27701:27701:1520682857330:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
-[27701:27701:1520682858402:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
-[27701:27701:1520683025034:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-button-images after class was initialised
-[27701:27701:1520683294425:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
-[27701:27753:1520684022963:VERBOSE1:crl_set_fetcher.cc(85)] Loaded 215286 bytes of CRL set from disk
-[27701:27757:1520684023719:VERBOSE1:crl_set_fetcher.cc(107)] Installed CRL set #3926
-[4:4:1520684484247:VERBOSE1:chromoting_instance.cc(652)] Registering global log handler
-[4:4:1520684564376:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
-[4:4:1520684671315:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libffmpegsumo.so) failed, dlerror() says:
+[1:1:1531478235267:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
+[1:1:1531478235612:VERBOSE1:zygote_main_linux.cc(470)] ZygoteMain: fork delegate is NULL
+[1:1:1531478336314:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[28097:28097:1531480429592:VERBOSE1:client_socket_pool_base.cc(65)] Setting g_socket_reuse_policy_penalty_exponent = -1
+[28097:28097:1531480551646:VERBOSE1:pref_proxy_config_tracker_impl.cc(143)] 0xb85b29c0: set chrome proxy config service to 0xb84b1468
+[28097:28097:1531480552135:VERBOSE1:pref_proxy_config_tracker_impl.cc(226)] 0xb85b29c0: Done pushing proxy to UpdateProxyConfig
+[28097:28097:1531480554293:VERBOSE1:gpu_info_collector_linux.cc(259)] PCI bus scanning is not supported
+[28097:28153:1531480555690:VERBOSE1:host_resolver_impl.cc(1898)] IPv6Probe forced AddressFamily setting to ADDRESS_FAMILY_IPV4
+[28097:28097:1531480560942:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/chromium/plugins
+[28097:28097:1531480562316:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /home/max/.mozilla/plugins
+[28097:28097:1531480563282:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/browser-plugins
+[28097:28097:1531480564239:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/mozilla/plugins
+[28097:28097:1531480565289:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/firefox/plugins
+[28097:28097:1531480566186:VERBOSE1:plugin_service_impl.cc(224)] Watching for changes in: /usr/lib/xulrunner-addons/plugins
+[28097:28097:1531481419029:VERBOSE1:protected_prefs_watcher.cc(252)] Backup version: 4
+[28097:28097:1531481419464:VERBOSE1:protected_prefs_watcher.cc(116)] Initialized pref watcher
+[28097:28097:1531481730879:VERBOSE1:pref_proxy_config_tracker_impl.cc(143)] 0xb8587220: set chrome proxy config service to 0xb85877a8
+[28097:28097:1531481733358:VERBOSE1:pref_proxy_config_tracker_impl.cc(226)] 0xb8587220: Done pushing proxy to UpdateProxyConfig
+[28097:28097:1531482183892:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-label-select-on-focus after class was initialised
+[28097:28097:1531482203249:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-entry-select-on-focus after class was initialised
+[28097:28097:1531482204094:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-entry-password-hint-timeout after class was initialised
+[28097:28097:1531482587965:VERBOSE1:startup_browser_creator_impl.cc(587)] StartupBrowserCreatorImpl::ProcessStartupURLs
+[28097:28097:1531482588653:VERBOSE1:startup_browser_creator_impl.cc(595)] Pref: default
+[28097:28097:1531482697136:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-bar-popup-delay after class was initialised
+[28097:28097:1531482729634:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-can-change-accels after class was initialised
+[28097:28097:1531482741027:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-popup-delay after class was initialised
+[28097:28097:1531482741981:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-popdown-delay after class was initialised
+[28097:28149:1531482852859:VERBOSE1:crl_set_fetcher.cc(85)] Loaded 215286 bytes of CRL set from disk
+[28097:28153:1531482853575:VERBOSE1:crl_set_fetcher.cc(107)] Installed CRL set #3926
+[28097:28097:1531483130701:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-button-images after class was initialised
+[28097:28097:1531483682996:ERROR:browser_main_loop.cc(165)] GLib-GObject: Attempt to add property GtkSettings::gtk-menu-images after class was initialised
+[4:4:1531484511427:VERBOSE1:chromoting_instance.cc(652)] Registering global log handler
+[4:4:1531484569991:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[4:4:1531484632144:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libffmpegsumo.so) failed, dlerror() says:
 /usr/lib/chromium/libffmpegsumo.so: cannot open shared object file: Permission denied
-[4:4:1520684672056:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libavutil.so.51) failed, dlerror() says:
+[4:4:1531484632939:VERBOSE1:ffmpeg_stubs.cc(652)] dlopen(/usr/lib/chromium/libavutil.so.51) failed, dlerror() says:
 /usr/lib/chromium/libavutil.so.51: cannot open shared object file: Permission denied
-[27701:27757:1520686333617:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/index.html
-[27701:27757:1520686358653:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/index.html" bytes_read = 4086
-[27701:27757:1520686383037:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/index.html" bytes_read = 0
-[27701:27757:1520686383350:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/index.html
-[27701:27757:1520686497145:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick.css
-[27701:27757:1520686512378:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.css" bytes_read = 1718
-[27701:27757:1520686518070:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.css" bytes_read = 0
-[27701:27757:1520686518455:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick.css
-[27701:27757:1520686603352:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick-theme.css
-[27701:27757:1520686655319:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick.min.js
-[27701:27701:1520686808417:VERBOSE1:automation_tab_helper.cc(74)] Received DidStartLoading while loading already started.
-[27701:27757:1520686999497:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick-theme.css" bytes_read = 3144
-[27701:27701:1520687015304:VERBOSE1:client_side_detection_host.cc(101)] Skipping phishing classification for URL: file:///frontend/index.html because of hosting on private IP: 
-[27701:27757:1520687022834:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick-theme.css" bytes_read = 0
-[27701:27757:1520687023154:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick-theme.css
-[27701:27757:1520687094769:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 32768
-[27701:27757:1520687096801:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 3869
-[27701:27757:1520687100849:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 0
-[27701:27757:1520687101169:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick.min.js
-[27701:27757:1520687175097:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://code.jquery.com/jquery-1.11.0.min.js
-[27701:27757:1520687200457:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://code.jquery.com/jquery-migrate-1.2.1.min.js
-[27701:27757:1520687258496:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 65536
-[27701:27757:1520687298604:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-migrate-1.2.1.min.js" bytes_read = 7199
-[27701:27757:1520687312163:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-migrate-1.2.1.min.js" bytes_read = 0
-[27701:27757:1520687312482:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://code.jquery.com/jquery-migrate-1.2.1.min.js
-[27701:27757:1520687329955:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 16135
-[27701:27757:1520687381723:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 14710
-[27701:27757:1520687399872:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 0
-[27701:27757:1520687400468:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://code.jquery.com/jquery-1.11.0.min.js
-[27779:27779:1520688207598:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
-[27779:27779:1520688208738:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
-[27779:27779:1520688232018:VERBOSE1:gpu_main.cc(136)] gfx::GLSurface::InitializeOneOff failed
-[4:4:1520688555089:VERBOSE1:chrome_v8_context.cc(42)] Created context:
+[28097:28153:1531485869496:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/index.html
+[28097:28153:1531485901424:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/index.html" bytes_read = 4156
+[28097:28153:1531485911957:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/index.html" bytes_read = 0
+[28097:28153:1531485912264:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/index.html
+[28097:28153:1531486046465:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick.css
+[28097:28153:1531486075689:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.css" bytes_read = 1718
+[28097:28153:1531486112740:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.css" bytes_read = 0
+[28097:28153:1531486113058:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick.css
+[28097:28153:1531486151809:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick-theme.css
+[28097:28153:1531486219594:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/slick.min.js
+[28097:28097:1531486241742:VERBOSE1:automation_tab_helper.cc(74)] Received DidStartLoading while loading already started.
+[28097:28153:1531486408796:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick-theme.css" bytes_read = 3144
+[28097:28153:1531486421475:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick-theme.css" bytes_read = 0
+[28097:28153:1531486421887:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick-theme.css
+[28097:28153:1531486450630:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 32768
+[28097:28153:1531486465218:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 3869
+[28097:28153:1531486486020:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/slick.min.js" bytes_read = 0
+[28097:28153:1531486486313:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/slick.min.js
+[28097:28097:1531486542105:VERBOSE1:client_side_detection_host.cc(101)] Skipping phishing classification for URL: file:///frontend/index.html because of hosting on private IP: 
+[28097:28153:1531486580177:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://code.jquery.com/jquery-1.11.0.min.js
+[28097:28153:1531486588072:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://code.jquery.com/jquery-migrate-1.2.1.min.js
+[28097:28153:1531486616415:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 65536
+[28097:28153:1531486636121:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-migrate-1.2.1.min.js" bytes_read = 7199
+[28097:28153:1531486652142:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-migrate-1.2.1.min.js" bytes_read = 0
+[28097:28153:1531486652449:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://code.jquery.com/jquery-migrate-1.2.1.min.js
+[28097:28153:1531486662357:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 16135
+[28097:28153:1531486675195:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 14710
+[28097:28153:1531486691567:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://code.jquery.com/jquery-1.11.0.min.js" bytes_read = 0
+[28097:28153:1531486691882:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://code.jquery.com/jquery-1.11.0.min.js
+[28173:28173:1531487453900:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[28173:28173:1531487474111:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[28173:28173:1531487477310:VERBOSE1:gpu_main.cc(136)] gfx::GLSurface::InitializeOneOff failed
+[4:4:1531487965085:VERBOSE1:chrome_v8_context.cc(42)] Created context:
   extension id: 
-  frame:        0xb8564f50
+  frame:        0xb81fae80
   context type: WEB_PAGE
-[4:4:1520688582001:VERBOSE1:chrome_v8_context.cc(125)] Could not execute chrome hidden method: dispatchOnLoad
-[4:4:1520688582331:VERBOSE1:extension_dispatcher.cc(855)] Num tracked contexts: 1
-[27779:27779:1520688931885:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
-[27779:27779:1520688959296:VERBOSE1:gpu_child_thread.cc(116)] Exiting GPU process due to errors during initialization
-[27788:27788:1520694191638:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
-[27788:27788:1520694192746:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
-[27788:27788:1520694193021:VERBOSE1:gpu_main.cc(136)] gfx::GLSurface::InitializeOneOff failed
-[27788:27788:1520694425587:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
-[27788:27788:1520694433347:VERBOSE1:gpu_child_thread.cc(116)] Exiting GPU process due to errors during initialization
-[27701:27757:1520694680131:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/ajax-loader.gif
-[27701:27757:1520694692731:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/ajax-loader.gif" bytes_read = 4178
-[27701:27757:1520694694451:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/ajax-loader.gif" bytes_read = 0
-[27701:27757:1520694694743:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/ajax-loader.gif
-[4:4:1520695131558:VERBOSE1:translate_helper.cc(163)] Detected lang_id: en, from Text:
-Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams) Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams) Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams)
+[4:4:1531487969666:VERBOSE1:chrome_v8_context.cc(125)] Could not execute chrome hidden method: dispatchOnLoad
+[4:4:1531488001049:VERBOSE1:extension_dispatcher.cc(855)] Num tracked contexts: 1
+[28173:28173:1531488372798:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
+[28173:28173:1531488407332:VERBOSE1:gpu_child_thread.cc(116)] Exiting GPU process due to errors during initialization
+[28181:28181:1531493245064:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[28181:28181:1531493246315:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[28181:28181:1531493246685:VERBOSE1:gpu_main.cc(136)] gfx::GLSurface::InitializeOneOff failed
+[28181:28181:1531493482199:VERBOSE1:sandbox_linux.cc(118)] Lacking support for seccomp-bpf sandbox.
+[28181:28181:1531493489424:VERBOSE1:gpu_child_thread.cc(116)] Exiting GPU process due to errors during initialization
+[28097:28153:1531493730936:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/ajax-loader.gif
+[28097:28153:1531493739943:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/ajax-loader.gif" bytes_read = 4178
+[28097:28153:1531493742959:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/ajax-loader.gif" bytes_read = 0
+[28097:28153:1531493743254:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/ajax-loader.gif
+[4:4:1531494161825:VERBOSE1:translate_helper.cc(163)] Detected lang_id: en, from Text:
+Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232) Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232) Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232)
 PreviousNext1
 2
 3
 *************************************
 
-[27701:27757:1520695173726:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/fonts/slick.woff
-[27701:27757:1520695300523:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/fonts/slick.woff" bytes_read = 1380
-[27701:27757:1520695302592:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/fonts/slick.woff" bytes_read = 0
-[27701:27757:1520695302883:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/fonts/slick.woff
-[4:4:1520695896475:VERBOSE1:translate_helper.cc(163)] Detected lang_id: en, from Text:
-Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams) Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams) Busy Burger Protein Bar (W Washington St) Sopraffina Marketcaffe (W. Adams)
+[28097:28153:1531494194035:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: file:///frontend/slick/fonts/slick.woff
+[28097:28153:1531494311772:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/fonts/slick.woff" bytes_read = 1380
+[28097:28153:1531494320733:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "file:///frontend/slick/fonts/slick.woff" bytes_read = 0
+[28097:28153:1531494321058:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: file:///frontend/slick/fonts/slick.woff
+[4:4:1531494891098:VERBOSE1:translate_helper.cc(163)] Detected lang_id: en, from Text:
+Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232) Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232) Freshii (West Monroe, Chicago) (604) IDOF Fresh Mediterranean (N Wells St) Potbelly Sandwich Shop (Store #232)
 PreviousNext1
 2
 3
 *************************************
 
+[28097:28149:1531849555821:VERBOSE1:crl_set_fetcher.cc(184)] Applied CRL set delta #3926->#3928
+[28097:28153:1531849575400:VERBOSE1:crl_set_fetcher.cc(107)] Installed CRL set #3928
+[28097:28097:1535050941917:INFO:CONSOLE(84)] "Button pushed for index: 1, restaurant: IDOF Fresh Mediterranean (N Wells St)", source: file:///frontend/index.html (84)
+[28097:28097:1535051871409:ERROR:render_widget_host_impl.cc(1803)] We seem to have a different key type sent from the renderer. (10 vs. 9). Ignoring event.
+[28097:28097:1535052614935:INFO:CONSOLE(90)] "Sending post request for index: 1", source: file:///frontend/index.html (90)
+[28097:28097:1535052868634:ERROR:render_widget_host_impl.cc(1800)] Got a KeyEvent back from the renderer but we don't seem to have sent it to the renderer!
+[28097:28153:1535054627320:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://localhost:11011/arrived/1
+[28097:28153:1535054640397:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/1" bytes_read = 291
+[28097:28153:1535054650492:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/1" bytes_read = 0
+[28097:28153:1535054650813:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://localhost:11011/arrived/1
+[28097:28097:1535054652699:INFO:CONSOLE(0)] "XMLHttpRequest cannot load http://localhost:11011/arrived/1. Origin null is not allowed by Access-Control-Allow-Origin.", source:  (0)
+[28097:28097:1535057511233:INFO:CONSOLE(84)] "Button pushed for index: 0, restaurant: Freshii (West Monroe, Chicago) (604)", source: file:///frontend/index.html (84)
+[28097:28097:1535057577463:ERROR:render_widget_host_impl.cc(1803)] We seem to have a different key type sent from the renderer. (10 vs. 9). Ignoring event.
+[28097:28097:1535058617786:INFO:CONSOLE(90)] "Sending post request for index: 0", source: file:///frontend/index.html (90)
+[28097:28097:1535058744654:ERROR:render_widget_host_impl.cc(1800)] Got a KeyEvent back from the renderer but we don't seem to have sent it to the renderer!
+[28097:28153:1535060063603:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://localhost:11011/arrived/0
+[28097:28153:1535060076191:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/0" bytes_read = 291
+[28097:28153:1535060080374:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/0" bytes_read = 0
+[28097:28153:1535060080698:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://localhost:11011/arrived/0
+[28097:28097:1535060086311:INFO:CONSOLE(0)] "XMLHttpRequest cannot load http://localhost:11011/arrived/0. Origin null is not allowed by Access-Control-Allow-Origin.", source:  (0)
+[28097:28097:1535106743845:INFO:CONSOLE(84)] "Button pushed for index: 2, restaurant: Potbelly Sandwich Shop (Store #232)", source: file:///frontend/index.html (84)
+[28097:28097:1535106809776:ERROR:render_widget_host_impl.cc(1803)] We seem to have a different key type sent from the renderer. (10 vs. 9). Ignoring event.
+[28097:28097:1535108070869:INFO:CONSOLE(90)] "Sending post request for index: 2", source: file:///frontend/index.html (90)
+[28097:28097:1535108198267:ERROR:render_widget_host_impl.cc(1800)] Got a KeyEvent back from the renderer but we don't seem to have sent it to the renderer!
+[28097:28153:1535109614186:VERBOSE1:resource_loader.cc(293)] OnResponseStarted: http://localhost:11011/arrived/2
+[28097:28153:1535109628882:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/2" bytes_read = 291
+[28097:28153:1535109633367:VERBOSE1:resource_loader.cc(320)] OnReadCompleted: "http://localhost:11011/arrived/2" bytes_read = 0
+[28097:28153:1535109633692:VERBOSE1:resource_loader.cc(543)] ResponseCompleted: http://localhost:11011/arrived/2
+[28097:28097:1535109636714:INFO:CONSOLE(0)] "XMLHttpRequest cannot load http://localhost:11011/arrived/2. Origin null is not allowed by Access-Control-Allow-Origin.", source:  (0)
+[28097:28153:1538993150619:VERBOSE1:protocol_manager.cc(303)] SafeBrowsing request for: https://safebrowsing.google.com/safebrowsing/downloads?client=chromium&appver=22.0.1229.94&pver=2.2 failed with error: -107
+[28097:28153:1539059013099:VERBOSE1:protocol_manager.cc(303)] SafeBrowsing request for: https://safebrowsing.google.com/safebrowsing/downloads?client=chromium&appver=22.0.1229.94&pver=2.2 failed with error: -107
+[28097:28097:1540067155527:VERBOSE1:extension_updater.cc(500)] Sending EXTENSION_UPDATING_FINISHED
+[28097:28097:1540067428845:VERBOSE1:extension_downloader.cc(401)] Failed to fetch manifest 'https://clients2.google.com/service/update2/crx?x=id%3Dcom.google.crx.blacklist%26v%3D0.0.0.149%26uc%26ping%3Dr%253D1' response code:-1
+[28097:28097:1540067429350:VERBOSE1:extension_updater.cc(500)] Sending EXTENSION_UPDATING_FINISHED
+[28097:28153:1541452800376:VERBOSE1:protocol_manager.cc(303)] SafeBrowsing request for: https://safebrowsing.google.com/safebrowsing/downloads?client=chromium&appver=22.0.1229.94&pver=2.2 failed with error: -107
