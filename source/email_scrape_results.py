@@ -1,7 +1,7 @@
 import requests
 import json
 import sys
-
+import mailgun_api
 
 def pretty_info(info):
     return 'Restaurant: {}\n\tAverage: {}\n\tEarliest: {}\n\tLatest: {}\n\tMost Recent: {}\n\tNumber of Deliveries: {}'.format(info['restaurant'], info['average'], info['earliest'], info['latest'], info['most_recent'], info['number_deliveries'])
@@ -35,7 +35,7 @@ def get_msg_body():
 
 
 def email_the_address():
-    result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@pretos.com", "to": "adsmith@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()})
+    result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", mailgun_api.get_key()), data={"from": "LunchBox3000@pretos.com", "to": "adsmith@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()})
     if result.status_code != 200:
         sys.exit(1)
 

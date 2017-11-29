@@ -49,7 +49,7 @@ def hard_code_names_in_html(names):
         
 def main():
     names = get_lunch_options()
-    #names = ["El Ranchito Gourmet Pizza (N Milwaukee)", "Freshii (200 W Monroe)", "Avanti Caffe"]
+    #names = ["Christopher Fixed The Lunchbox", "Mixed Greens", "Costa Vida", "Mezza"]
     print(names)
     hard_code_names_in_html(names)
 
