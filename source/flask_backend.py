@@ -4,7 +4,7 @@ import time
 import json
 import datetime
 from subprocess import call
-
+import mailgun_api
 
 app = Flask(__name__)
 SERVER_PORT = 11011
@@ -55,8 +55,8 @@ def email_notification_for(restaurant_arrived_name):
     while status != 200 and attempt <= 6:
         write_log('Sending request to mailgun for restaurant {}'.format(restaurant_arrived_name))
         try:
-            result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@pretos.com", "to": "jpiercy@factset.com", "subject": subject_val, "text": " "})
-            result2 = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", "key-42e3d9f10b9b041a11918b0aa7dd620d"), data={"from": "LunchBox3000@pretos.com", "to": "mr.mcnoot@gmail.com", "subject": subject_val, "text": "lunch"})
+            result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", mailgun_api.get_key()), data={"from": "LunchBox3000@pretos.com", "to": "jpiercy@factset.com", "subject": subject_val, "text": " "})
+            result2 = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", mailgun_api.get_key()), data={"from": "LunchBox3000@pretos.com", "to": "mr.mcnoot@gmail.com", "subject": subject_val, "text": "lunch"})
         except Exception as e:
             write_log('Request failed with message {}'.format(e))
             attempt += 1
