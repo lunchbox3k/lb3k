@@ -45,6 +45,12 @@ def write_log(log):
 
 def email_notification_for(restaurant_arrived_name):
     #try:
+    payload = {"@type": "MessageCard",
+        "@context": "http://schema.org/extensions",
+        "summary": "{restaurant} is here!".format(restaurant=restaurant_arrived_name),
+        "title": "{restaurant} is here!".format(restaurant=restaurant_arrived_name) }
+    webhook = "https://outlook.office.com/webhook/3dbb3a8e-7f70-4240-a09a-079b6c486c02@ff9b87e3-c548-4b3d-8782-7cf47b86c057/IncomingWebhook/0218db3f44894b408e9c67ab20ab8d13/92d20bda-604a-4fe5-8f63-135c9d153cc2"
+    requests.post(webhook, json=payload)
     subject_val = restaurant_arrived_name + ' is here!!'
     print (subject_val)
     write_rest_stats(restaurant_arrived_name)
