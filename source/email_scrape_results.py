@@ -35,7 +35,7 @@ def get_msg_body():
 
 
 def email_the_address():
-    result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", mailgun_api.get_key()), data={"from": "LunchBox3000@pretos.com", "to": "adsmith@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()})
+    result = requests.post("https://api.mailgun.net/v3/pretos.com/messages", auth=("api", mailgun_api.get_key()), data={"from": "LunchBox3000@pretos.com", "to": "adsmith@factset.com", "subject": "LB3K scrape results", "text": get_msg_body()}, verify=False)
     if result.status_code != 200:
         sys.exit(1)
 
